@@ -1,4 +1,4 @@
-# Janela para selecionar a pasta do nosso computador:
+# aba para selecionar a pasta do computador:
 import os
 from tkinter.filedialog import askdirectory
 import shutil
@@ -8,7 +8,7 @@ nome_pasta_selecionada = askdirectory()
 
 lista_arquivos = os.listdir(nome_pasta_selecionada)
 
-# Fazer o backup dos arquivos que estão nessa pasta:
+# fazer o backup dos arquivos que estão nessa pasta:
 nome_pasta_backup = "backup"
 nome_completo_pasta_backup = f"{nome_pasta_selecionada}/{nome_pasta_backup}"
 if not os.path.exists(nome_completo_pasta_backup):
